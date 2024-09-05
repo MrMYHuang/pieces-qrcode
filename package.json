@@ -1,0 +1,21 @@
+{
+  "name": "pieces-qrcode",
+  "version": "0.1.0",
+  "author": {
+    "name": "Meng-Yuan Huang",
+    "email": "myh@live.com"
+  },
+  "repository": {
+    "url": "https://github.com/MrMYHuang/pieces-qrcode"
+  },
+  "dependencies": {
+    "@activepieces/pieces-framework": "^0.7.34",
+    "@activepieces/shared": "^0.10.116",
+    "qrcode": "^1.5.4",
+    "uuid": "^10.0.0"
+  },
+  "devDependencies": {
+    "@types/qrcode": "^1.5.5",
+    "@types/uuid": "^10.0.0"
+  }
+}

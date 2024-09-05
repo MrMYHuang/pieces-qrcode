@@ -1,0 +1,29 @@
+{
+  "name": "pieces-qrcode",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/pieces/qrcode/src",
+  "projectType": "library",
+  "targets": {
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["packages/pieces/qrcode/**/*.ts"]
+      }
+    },
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/packages/pieces/qrcode",
+        "tsConfig": "packages/pieces/qrcode/tsconfig.lib.json",
+        "packageJson": "packages/pieces/qrcode/package.json",
+        "main": "packages/pieces/qrcode/src/index.ts",
+        "assets": ["packages/pieces/qrcode/*.md"],
+        "buildableProjectDepsInPackageJsonType": "dependencies",
+        "updateBuildableProjectDepsInPackageJson": true
+      }
+    }
+  },
+  "tags": []
+}
